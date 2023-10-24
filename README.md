@@ -12,5 +12,6 @@ https://kotlinlang.org/docs/multiplatform-add-dependencies.html
 # Findings
 
 - Compose multiplatform desktop app plugin creates a template for your desktop app
-- 
+- Main entry point for apps code is in Main.kt with a starting function main() that starts the aoo
+- build.gradle.kts acts as the settings file for dependencies and resources
 
