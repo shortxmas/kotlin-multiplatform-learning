@@ -1,10 +1,13 @@
-# Learning to compose a multiplatform desktop app
+# Resources
 
-Currently following this github repo to compose this project https://github.com/JetBrains/compose-multiplatform-desktop-template#readme
+https://github.com/JetBrains/compose-multiplatform-desktop-template#readme
+
+https://kotlinlang.org/docs/multiplatform-add-dependencies.html
 
 # Progress
 
-Was able to create initial project structure through create new project with the plugin
+- Created initial project structure through create new project with the plugin
+- Now using second link in resources on how to use libraries in a multiplatform app
 
 # Findings
 
