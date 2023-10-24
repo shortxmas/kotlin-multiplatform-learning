@@ -6,10 +6,14 @@ https://kotlinlang.org/docs/multiplatform-add-dependencies.html
 
 https://www.youtube.com/watch?v=3VlJKTDdQHI&ab_channel=Stevdza-San
 
+https://kotlinlang.org/docs/native-dynamic-libraries.html
+
+https://github.com/AAkira/Kotlin-Multiplatform-Libraries
+
 # Progress
 
 - Created initial project structure through create new project with the plugin
-- Currently trying to import and use a DateTime library to feel how library dependencies work 
+- Currently trying to integrate and use a library from https://github.com/AAkira/Kotlin-Multiplatform-Libraries
 
 # Findings
 

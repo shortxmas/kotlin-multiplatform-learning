@@ -9,7 +9,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
-import java.time.Clock
+
 
 @Composable
 @Preview
@@ -18,16 +18,17 @@ fun App() {
 
     MaterialTheme {
         Button(onClick = {
-            text = double()
+            text = "h"
         }) {
             Text(text)
         }
     }
 }
 
-fun double():String{
+fun double(){
 
-    return "im smart"
+
+
 }
 
 

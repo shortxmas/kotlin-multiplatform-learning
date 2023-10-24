@@ -23,12 +23,15 @@ kotlin {
         val jvmMain by getting {
             dependencies {
                 implementation(compose.desktop.currentOs)
+                implementation("me.sebj:time:0.4.8")
                 implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.4.1")
             }
         }
         val jvmTest by getting
     }
 }
+
+
 
 compose.desktop {
     application {
