@@ -9,6 +9,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
+import java.time.Clock
 
 @Composable
 @Preview
@@ -17,15 +18,24 @@ fun App() {
 
     MaterialTheme {
         Button(onClick = {
-            text = "Hello, Desktop!"
+            text = double()
         }) {
             Text(text)
         }
     }
 }
 
+fun double():String{
+
+    return "im smart"
+}
+
+
+
 fun main() = application {
     Window(onCloseRequest = ::exitApplication) {
         App()
     }
 }
+
+
