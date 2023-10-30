@@ -1,15 +1,12 @@
-import androidx.compose.material.MaterialTheme
 import androidx.compose.desktop.ui.tooling.preview.Preview
 import androidx.compose.material.Button
+import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
+import androidx.compose.runtime.*
 import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
 import kotlinx.datetime.*
+
 
 
 @Composable
@@ -26,7 +23,7 @@ fun App() {
         }
 
     }
-    
+
 }
 
 fun daysUntilNewYear(): String {
@@ -34,8 +31,9 @@ fun daysUntilNewYear(): String {
     val closestNewYear = LocalDate(today.year + 1, 1, 1)
     val daysUntilInt = today.daysUntil(closestNewYear)
     return daysUntilInt.toString()
-
 }
+
+
 
 
 fun main() = application {
