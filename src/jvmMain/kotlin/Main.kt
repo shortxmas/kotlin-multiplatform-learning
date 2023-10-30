@@ -9,28 +9,33 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
+import kotlinx.datetime.*
 
 
 @Composable
 @Preview
 fun App() {
-    var text by remember { mutableStateOf("Hello, World!") }
+    var text by remember { mutableStateOf("Days until new year!") }
 
     MaterialTheme {
+
         Button(onClick = {
-            text = "h"
+            text = (daysUntilNewYear())
         }) {
             Text(text)
         }
+
     }
+    
 }
 
-fun double(){
-
-
+fun daysUntilNewYear(): String {
+    val today = Clock.System.todayIn(TimeZone.currentSystemDefault())
+    val closestNewYear = LocalDate(today.year + 1, 1, 1)
+    val daysUntilInt = today.daysUntil(closestNewYear)
+    return daysUntilInt.toString()
 
 }
-
 
 
 fun main() = application {

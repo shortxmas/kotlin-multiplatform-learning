@@ -25,6 +25,9 @@ kotlin {
                 implementation(compose.desktop.currentOs)
                 implementation("me.sebj:time:0.4.8")
                 implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.4.1")
+                implementation("io.ktor:ktor-server-core:2.3.5")
+                implementation("io.ktor:ktor-server-netty:2.3.5")
+                implementation("com.ionspin.kotlin:bignum:0.3.8")
             }
         }
         val jvmTest by getting
